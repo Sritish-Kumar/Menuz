@@ -6,7 +6,6 @@ app = Flask(__name__)
 @app.route('/',methods = ['GET'])
 def home():
     if(request.method=='GET'):
-        print("Working")
         return "Your at home page", 200
         # return jsonify({"Hello":"World"})
     
@@ -15,7 +14,6 @@ def home():
 def get_user(date):
 
     hostel = request.args.get("hostel")
-    print(hostel)
 
     return jsonify({
         "date":date,
