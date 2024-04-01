@@ -3,7 +3,7 @@ import datetime,json, math
 
 app = Flask(__name__)
 
-@app.route('/',methods = ['GET'])
+@app.route("/",methods = ['GET'])
 def home():
     if(request.method=='GET'):
         return "Your at home page", 200
